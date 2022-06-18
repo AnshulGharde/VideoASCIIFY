@@ -16,7 +16,7 @@ I have used the python libraries, so it’s required that you instal them too
 All you need is to run the VideoASCIIFY.py file.
 Copy the input video file in the INPUT_FILE.
 After running the VideoASCIIFY.py file, it will ask for name of the video file.
-Enter video file name with proper extension of .mp4 or. avi. (Other format might give poor result)
+Enter video file name with proper extension of .mp4 or. avi. (Other format will also work.)
 
 If you give these all input correctly, the output video will be stored in the directory OUTPUT_FILE with the same name and extension .avi.
 
