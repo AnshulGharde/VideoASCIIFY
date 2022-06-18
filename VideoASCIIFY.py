@@ -8,20 +8,17 @@ from Utility_Files import FrameToVideo, AsciiFrame
                                         ##START OF CODE##
         #######################################################################################
 try:
-    # taking input from user. Enter .mp4 or .avi file only. Because this works on that files only.
+    # taking input from user.
     #put the input file in the directoiry with same name.
     if(not os.path.exists("./INPUT_FILE")):
         os.makedirs("./INPUT_FILE")
         print("\"INPUT_FILE\" directory did not EXIST.")
         print("\"INPUT_FILE\" directory CREATED.")
         print("Copy the video file in this directory.")
-    Vidname = input("Enter the name of video file with \".mp4\" or \".avi\" extension present in INPUT_FILE: ")
+    Vidname = input("Enter the name of video file with proper extension present in INPUT_FILE: ")
 
     if(not os.path.exists("./INPUT_FILE/"+Vidname)):
         print("THE FILE YOU PASSED DO NOT EXIST. CHECK AND RUN THE PROGRAM AGAIN.")
-        exit()
-    elif((Vidname[len(Vidname)-4:len(Vidname)]!=".mp4")and(Vidname[len(Vidname)-4:len(Vidname)]!=".avi")):
-        print("THE FILE YOU PASSED IS NOT OF A EXTENTION \".mp4\" or \".avi\" extension. CHECK AND RUN THE PROGRAM AGAIN.")
         exit()
     else:
         print ("BEGINING THE CONVERSION PROCESS.")
