@@ -31,6 +31,7 @@ try:
     # finding total number of frames in the video. Try to convert video with less number of frames.
     # more number of frames will take more time to get ASCIIFIED.
     total = int(cam.get(cv2.CAP_PROP_FRAME_COUNT))
+    fps = int(cam.get(cv2.CAP_PROP_FPS))
     print("There are in total "+ str(total) + " numbers of frame in this video.")
 
     # creating a new directory to save EACH asciified frame of the video.
@@ -98,7 +99,7 @@ try:
     # now, all the frames of the video are asciified and stored in the folder "FRAMES".
     # we just  have to combine all the images sequencial so that a video is formed.
     # below function takes care of that. Passing total number of compactible frames as a argument 
-    FrameToVideo.VideoMaker((total-j),out_name)
+    FrameToVideo.VideoMaker((total-j),out_name,fps)
 
     # returning from the above funtion, we would have the required asciified video in the directory OUTPUT_FILE with name "Project.avi".
     # thus we no longer need the frames of the videos.
