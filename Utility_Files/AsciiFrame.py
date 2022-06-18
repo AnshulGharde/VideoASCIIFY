@@ -51,6 +51,9 @@ def Fascii(image,path):
     num_cols = 300 # this defines how many number of columns are there in asciified picture 
 
     height, width, _ = image.shape
+    
+    if(int(num_cols)>int(width)): # if width of image is less than number of columns(here currently 300),
+        num_cols=int(width)       # it will lead to error. thus setting it to num_cols = width 
 
     cell_w = width/num_cols         # these are simple
     cell_h = scale * cell_w         # mathematical calculations
