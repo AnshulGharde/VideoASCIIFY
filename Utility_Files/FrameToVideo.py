@@ -7,7 +7,7 @@ import os
                                         ##START OF CODE##
         #######################################################################################
 
-def VideoMaker(total,out_name):
+def VideoMaker(total,out_name,fps:int):
 
     img_list = [] #creating a empty list to store all the frames.
     count=0 #variable to keep count of current frame, starting from '0'.
@@ -34,9 +34,9 @@ def VideoMaker(total,out_name):
     if(not os.path.exists("./OUTPUT_FILE")):
         os.makedirs("./OUTPUT_FILE")
 
-    out = cv2.VideoWriter("./OUTPUT_FILE/"+out_name+".avi",cv2.VideoWriter_fourcc(*'DIVX'), 24, size)
+    out = cv2.VideoWriter("./OUTPUT_FILE/"+out_name+".avi",cv2.VideoWriter_fourcc(*'DIVX'), fps, size)
     # this will store the video in the same directory under the name "Project.avi".
-    # frame rate is set to 24, but you can change to whatever rate you want.
+    # fps is the frames per second, taken from the video itself.
     # size specifies the dimensions of the video.
     
         #######################################################################################
