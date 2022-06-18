@@ -37,7 +37,7 @@ The ASCII-fied video will be stored in the directory named OUTPUT_FILE with the 
 1) The ASCII-fication takes more time if number of frames are more(obviously) and resolution each frame.
 Also, the video generated will take considerable amount of space on disk.
 This depends on the variable num_cols on the line51 of Utility_Files /AsciiFrame.py. currently it is set to 300.
-If you wish you can go and change it there. Refer to the frame examples and its size in the folder FrameExamples/column
+If you wish you can go and change it there. Refer to the frame examples and its size in the folder FrameExamples/Column
 
 2) The output video is compiled at 24 frames per second (FPS) as set at line 37 of Utility_Files /FrameToVideo.py.
 If you want, you can go and change the FPS there.
