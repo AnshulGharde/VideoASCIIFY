@@ -34,15 +34,18 @@ The ASCII-fied video will be stored in the directory named OUTPUT_FILE with the 
 **For detailed explanation of WORKING of the code, go through the code itself as I have commented the details of code.**
 
 **SOME THINGS TO KNOW BEFORE RUNNIG THE CODE:**
-1)The ASCII-fication takes more time if number of frames are more(obviously) and resolution each frame.
+1) The ASCII-fication takes more time if number of frames are more(obviously) and resolution each frame.
 Also, the video generated will take considerable amount of space on disk.
 This depends on the variable num_cols on the line51 of Utility_Files /AsciiFrame.py. currently it is set to 300.
-If you wish you can go and change it there. Refer to the frame examples and its size in the folder FrameExamples
+If you wish you can go and change it there. Refer to the frame examples and its size in the folder FrameExamples/column
 
-2)The output video is compiled at 24 frames per second (FPS) as set at line 37 of Utility_Files /FrameToVideo.py.
+2) The output video is compiled at 24 frames per second (FPS) as set at line 37 of Utility_Files /FrameToVideo.py.
 If you want, you can go and change the FPS there.
 For more information go to 
 https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_video_display/py_video_display.html#display-video section SAVING A VIDEO
+
+3) the background color is set to (75, 75, 75) but you can set it to black(0, 0, 0) or white (255, 255, 255) as you wish.
+see the difference in the FrameExamples/BackGround
         
 **MY LEARNINGS AND TAKEAWAYS:**
 While working on this project,
