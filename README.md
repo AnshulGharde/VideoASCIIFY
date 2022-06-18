@@ -39,7 +39,7 @@ Also, the video generated will take considerable amount of space on disk.
 This depends on the variable num_cols on the line51 of Utility_Files /AsciiFrame.py. currently it is set to 300.
 If you wish you can go and change it there. Refer to the frame examples and its size in the folder FrameExamples/Column
 
-2) The output video is compiled at 24 frames per second (FPS) as set at line 37 of Utility_Files /FrameToVideo.py.
+2) The output video is compiled at original video's frames per second (FPS) as set at line 37 of Utility_Files /FrameToVideo.py.
 If you want, you can go and change the FPS there.
 For more information go to 
 https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_video_display/py_video_display.html#display-video section SAVING A VIDEO
@@ -50,5 +50,6 @@ see the difference in the FrameExamples/BackGround
 **MY LEARNINGS AND TAKEAWAYS:**
 While working on this project,
 1) I learned how to manipulate image data using opencv, pillow and python.
-2) I learned how to make and delete directory using os and shutil in-built library.
-3) Handling different types errors and exceptions.
+2) How to read some properties of video file.
+3) I learned how to make and delete directory using os and shutil in-built library.
+4) Handling different types errors and exceptions.
