@@ -13,6 +13,7 @@ I have used the python libraries, so it’s required that you instal them too
 
 **HOW TO RUN:**
 
+Clone the repository in your machine, and extract the zip file.
 All you need is to run the VideoASCIIFY.py file.
 Copy the input video file in the INPUT_FILE.
 After running the VideoASCIIFY.py file, it will ask for name of the video file.
@@ -53,3 +54,9 @@ While working on this project,
 2) How to read some properties of video file.
 3) I learned how to make and delete directory using os and shutil in-built library.
 4) Handling different types errors and exceptions.
+
+
+**Resourses and References**
+1) https://docs.opencv.org/4.x/
+2) https://pillow.readthedocs.io/en/stable/
+3) stackoverflow
