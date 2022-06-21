@@ -12,6 +12,7 @@ I have used the python libraries, so it’s required that you instal them too
 (If the import in the code gives error, try to give correct path according to your computer. Or copy the cv2, numpy and PIL directory in this folder where you extract my code)
 
 **HOW TO RUN:**
+(I have made demo video, put it in DEMO directory, see it to know better how to run.)
 
 Clone the repository in your machine, and extract the zip file.
 All you need is to run the VideoASCIIFY.py file.
